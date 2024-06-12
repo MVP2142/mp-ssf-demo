@@ -1,4 +1,5 @@
-1. mybatis-plus从3.5.5升级至3.5.6，使用ServiceImpl的saveBatch方法报错demo
+1. mybatis-plus从3.5.5升级至3.5.6，使用ServiceImpl的saveBatch方法报错demo，
+   - 执行单元测试代码：com.magictan.service.TestServiceTest.test
    - Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.magictan.mapper.TestMapper.insert
 2. 项目中存在多个sqlSessionFactory，升级3.5.6后，TestService获取到了错误的sqlSessionFactory
 3. 比对3.5.5和3.5.6版本代码差异，发现差异来自3.5.5和3.5.6版本ServiceImpl.getSqlSessionFactory的这行代码：
